@@ -1,7 +1,8 @@
-
 #include <iostream>
-using namespace std;
 
+#ifndef SPORTS_H
+#define SPORTS_H
+using namespace std;
 class Sports
 {
 private:
@@ -10,9 +11,12 @@ private:
 
 public:
     Sports(string playerName, string playerBest);
+    ~Sports();
     void setSportsName(string playerName);
     void setSportsBest(string playerBest);
     string getSportsName();
     string getSportsBest();
     void displaySportsInfo();
 };
+
+#endif // SPORTS_H
