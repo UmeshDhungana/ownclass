@@ -10,6 +10,11 @@ Sports::Sports(string playerName, string playerBest)
     setSportsBest(playerBest);
 }
 
+Sports::~Sports()
+{
+    cout<<"Object Destroyed";
+}
+
 void Sports:: setSportsName(string playerName)
 {
     sportsName = playerName;
@@ -33,5 +38,5 @@ string Sports:: getSportsBest()
 void Sports:: displaySportsInfo()
 {
     cout << "Best sport is "<< getSportsName();
-    cout << " Best player is "<< getSportsBest();
+    cout << " Best player is "<< getSportsBest()<<endl;
 }
